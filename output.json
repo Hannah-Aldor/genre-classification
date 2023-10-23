@@ -1,0 +1,4795 @@
+{
+    "success": true,
+    "results": [
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_table_row_count_to_be_between",
+                "kwargs": {
+                    "max_value": 17996,
+                    "min_value": 17996,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 17996
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_table_columns_to_match_set",
+                "kwargs": {
+                    "exact_match": null,
+                    "column_set": [
+                        "instrumentalness",
+                        "tempo",
+                        "mode",
+                        "duration_in min/ms",
+                        "Popularity",
+                        "time_signature",
+                        "key",
+                        "speechiness",
+                        "acousticness",
+                        "Class",
+                        "loudness",
+                        "danceability",
+                        "Track Name",
+                        "Artist Name",
+                        "energy",
+                        "liveness",
+                        "valence"
+                    ],
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": [
+                    "Artist Name",
+                    "Track Name",
+                    "Popularity",
+                    "danceability",
+                    "energy",
+                    "key",
+                    "loudness",
+                    "mode",
+                    "speechiness",
+                    "acousticness",
+                    "instrumentalness",
+                    "liveness",
+                    "valence",
+                    "tempo",
+                    "duration_in min/ms",
+                    "time_signature",
+                    "Class"
+                ]
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "Artist Name",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_value_lengths_to_be_between",
+                "kwargs": {
+                    "column": "Artist Name",
+                    "max_value": 153,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 1,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "Track Name",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_value_lengths_to_be_between",
+                "kwargs": {
+                    "column": "Track Name",
+                    "max_value": 132,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 1,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "danceability",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "danceability",
+                    "max_value": 0.0596,
+                    "strict_max": false,
+                    "min_value": 0.0596,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.0596
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "danceability",
+                    "max_value": 0.989,
+                    "strict_max": false,
+                    "min_value": 0.989,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.989
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "danceability",
+                    "max_value": 0.989,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 0.0596,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "danceability",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                0.432,
+                                0.432
+                            ],
+                            [
+                                0.545,
+                                0.545
+                            ],
+                            [
+                                0.659,
+                                0.659
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        0.432,
+                        0.545,
+                        0.659
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "danceability",
+                    "max_value": 0.545,
+                    "strict_max": false,
+                    "min_value": 0.545,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.545
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "danceability",
+                    "max_value": 0.5434332184929985,
+                    "strict_max": false,
+                    "min_value": 0.5434332184929985,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.5434332184929985
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "danceability",
+                    "max_value": 0.16626847956751442,
+                    "strict_max": false,
+                    "min_value": 0.16626847956751442,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.16626847956751442
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "energy",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "energy",
+                    "max_value": 2.03e-05,
+                    "strict_max": false,
+                    "min_value": 2.03e-05,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 2.03e-05
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "energy",
+                    "max_value": 1.0,
+                    "strict_max": false,
+                    "min_value": 1.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 1.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "energy",
+                    "max_value": 1.0,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 2.03e-05,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "energy",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                0.509,
+                                0.509
+                            ],
+                            [
+                                0.7,
+                                0.7
+                            ],
+                            [
+                                0.86,
+                                0.86
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        0.509,
+                        0.7,
+                        0.86
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "energy",
+                    "max_value": 0.7,
+                    "strict_max": false,
+                    "min_value": 0.7,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.7
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "energy",
+                    "max_value": 0.6627767470715714,
+                    "strict_max": false,
+                    "min_value": 0.6627767470715714,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.6627767470715714
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "energy",
+                    "max_value": 0.23537337490130925,
+                    "strict_max": false,
+                    "min_value": 0.23537337490130925,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.23537337490130925
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "loudness",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "loudness",
+                    "max_value": -39.952,
+                    "strict_max": false,
+                    "min_value": -39.952,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": -39.952
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "loudness",
+                    "max_value": 1.355,
+                    "strict_max": false,
+                    "min_value": 1.355,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 1.355
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "loudness",
+                    "max_value": 1.355,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": -39.952,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "loudness",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                -9.538,
+                                -9.538
+                            ],
+                            [
+                                -7.016,
+                                -7.016
+                            ],
+                            [
+                                -5.189,
+                                -5.189
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        -9.538,
+                        -7.016,
+                        -5.189
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "loudness",
+                    "max_value": -7.016,
+                    "strict_max": false,
+                    "min_value": -7.016,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": -7.016
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "loudness",
+                    "max_value": -7.9106597577239395,
+                    "strict_max": false,
+                    "min_value": -7.9106597577239395,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": -7.9106597577239395
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "loudness",
+                    "max_value": 4.049151006205922,
+                    "strict_max": false,
+                    "min_value": 4.049151006205922,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 4.049151006205922
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "mode",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "mode",
+                    "max_value": 0,
+                    "strict_max": false,
+                    "min_value": 0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "mode",
+                    "max_value": 1,
+                    "strict_max": false,
+                    "min_value": 1,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 1
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "mode",
+                    "max_value": 1,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "mode",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                1,
+                                1
+                            ],
+                            [
+                                1,
+                                1
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        0,
+                        1,
+                        1
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "mode",
+                    "max_value": 1.0,
+                    "strict_max": false,
+                    "min_value": 1.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 1.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "mode",
+                    "max_value": 0.636752611691487,
+                    "strict_max": false,
+                    "min_value": 0.636752611691487,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.636752611691487
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "mode",
+                    "max_value": 0.48094862167911484,
+                    "strict_max": false,
+                    "min_value": 0.48094862167911484,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.48094862167911484
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_in_set",
+                "kwargs": {
+                    "column": "mode",
+                    "mostly": 1.0,
+                    "value_set": [
+                        0,
+                        1
+                    ],
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_unique_value_count_to_be_between",
+                "kwargs": {
+                    "column": "mode",
+                    "max_value": 2,
+                    "strict_max": false,
+                    "min_value": 2,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 2
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+                "kwargs": {
+                    "column": "mode",
+                    "max_value": 0.00011113580795732385,
+                    "strict_max": false,
+                    "min_value": 0.00011113580795732385,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.00011113580795732385
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "speechiness",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "speechiness",
+                    "max_value": 0.0225,
+                    "strict_max": false,
+                    "min_value": 0.0225,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.0225
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "speechiness",
+                    "max_value": 0.955,
+                    "strict_max": false,
+                    "min_value": 0.955,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.955
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "speechiness",
+                    "max_value": 0.955,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 0.0225,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "speechiness",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                0.0348,
+                                0.0348
+                            ],
+                            [
+                                0.0474,
+                                0.0474
+                            ],
+                            [
+                                0.083,
+                                0.083
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        0.0348,
+                        0.0474,
+                        0.083
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "speechiness",
+                    "max_value": 0.0474,
+                    "strict_max": false,
+                    "min_value": 0.0474,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.0474
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "speechiness",
+                    "max_value": 0.07970699599911092,
+                    "strict_max": false,
+                    "min_value": 0.07970699599911092,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.07970699599911092
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "speechiness",
+                    "max_value": 0.08357606312709759,
+                    "strict_max": false,
+                    "min_value": 0.08357606312709759,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.08357606312709759
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "acousticness",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "acousticness",
+                    "max_value": 0.0,
+                    "strict_max": false,
+                    "min_value": 0.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "acousticness",
+                    "max_value": 0.996,
+                    "strict_max": false,
+                    "min_value": 0.996,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.996
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "acousticness",
+                    "max_value": 0.996,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 0.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "acousticness",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                0.0043,
+                                0.0043
+                            ],
+                            [
+                                0.0814,
+                                0.0814
+                            ],
+                            [
+                                0.434,
+                                0.434
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        0.0043,
+                        0.0814,
+                        0.434
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "acousticness",
+                    "max_value": 0.0814,
+                    "strict_max": false,
+                    "min_value": 0.0814,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.0814
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "acousticness",
+                    "max_value": 0.24708167183929763,
+                    "strict_max": false,
+                    "min_value": 0.24708167183929763,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.24708167183929763
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "acousticness",
+                    "max_value": 0.3106322373703473,
+                    "strict_max": false,
+                    "min_value": 0.3106322373703473,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.3106322373703473
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "liveness",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "liveness",
+                    "max_value": 0.0119,
+                    "strict_max": false,
+                    "min_value": 0.0119,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.0119
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "liveness",
+                    "max_value": 1.0,
+                    "strict_max": false,
+                    "min_value": 1.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 1.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "liveness",
+                    "max_value": 1.0,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 0.0119,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "liveness",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                0.0975,
+                                0.0975
+                            ],
+                            [
+                                0.129,
+                                0.129
+                            ],
+                            [
+                                0.258,
+                                0.258
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        0.0975,
+                        0.129,
+                        0.258
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "liveness",
+                    "max_value": 0.129,
+                    "strict_max": false,
+                    "min_value": 0.129,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.129
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "liveness",
+                    "max_value": 0.19616990442320514,
+                    "strict_max": false,
+                    "min_value": 0.19616990442320514,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.19616990442320514
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "liveness",
+                    "max_value": 0.15921166949811003,
+                    "strict_max": false,
+                    "min_value": 0.15921166949811003,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.15921166949811003
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "valence",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "valence",
+                    "max_value": 0.0183,
+                    "strict_max": false,
+                    "min_value": 0.0183,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.0183
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "valence",
+                    "max_value": 0.986,
+                    "strict_max": false,
+                    "min_value": 0.986,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.986
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "valence",
+                    "max_value": 0.986,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 0.0183,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "valence",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                0.297,
+                                0.297
+                            ],
+                            [
+                                0.481,
+                                0.481
+                            ],
+                            [
+                                0.672,
+                                0.672
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        0.297,
+                        0.481,
+                        0.672
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "valence",
+                    "max_value": 0.481,
+                    "strict_max": false,
+                    "min_value": 0.481,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.481
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "valence",
+                    "max_value": 0.486208490775728,
+                    "strict_max": false,
+                    "min_value": 0.486208490775728,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.486208490775728
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "valence",
+                    "max_value": 0.24019525514158643,
+                    "strict_max": false,
+                    "min_value": 0.24019525514158643,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.24019525514158643
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "tempo",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "tempo",
+                    "max_value": 30.557,
+                    "strict_max": false,
+                    "min_value": 30.557,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 30.557
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "tempo",
+                    "max_value": 217.416,
+                    "strict_max": false,
+                    "min_value": 217.416,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 217.416
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "tempo",
+                    "max_value": 217.416,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 30.557,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "tempo",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                99.622,
+                                99.622
+                            ],
+                            [
+                                120.066,
+                                120.066
+                            ],
+                            [
+                                141.969,
+                                141.969
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        99.622,
+                        120.066,
+                        141.969
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "tempo",
+                    "max_value": 120.0655,
+                    "strict_max": false,
+                    "min_value": 120.0655,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 120.0655
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "tempo",
+                    "max_value": 122.62329400977995,
+                    "strict_max": false,
+                    "min_value": 122.62329400977995,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 122.62329400977995
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "tempo",
+                    "max_value": 29.571527344026087,
+                    "strict_max": false,
+                    "min_value": 29.571527344026087,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 29.571527344026087
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "duration_in min/ms",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "duration_in min/ms",
+                    "max_value": 0.50165,
+                    "strict_max": false,
+                    "min_value": 0.50165,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.50165
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "duration_in min/ms",
+                    "max_value": 1477187.0,
+                    "strict_max": false,
+                    "min_value": 1477187.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 1477187.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "duration_in min/ms",
+                    "max_value": 1477187.0,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 0.50165,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "duration_in min/ms",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                166356.0,
+                                166356.0
+                            ],
+                            [
+                                209177.0,
+                                209177.0
+                            ],
+                            [
+                                252489.0,
+                                252489.0
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        166356.0,
+                        209177.0,
+                        252489.0
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "duration_in min/ms",
+                    "max_value": 209160.0,
+                    "strict_max": false,
+                    "min_value": 209160.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 209160.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "duration_in min/ms",
+                    "max_value": 200744.45885108635,
+                    "strict_max": false,
+                    "min_value": 200744.45885108635,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 200744.45885108635
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "duration_in min/ms",
+                    "max_value": 111989.12713055001,
+                    "strict_max": false,
+                    "min_value": 111989.12713055001,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 111989.12713055001
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "time_signature",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "time_signature",
+                    "max_value": 1,
+                    "strict_max": false,
+                    "min_value": 1,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 1
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "time_signature",
+                    "max_value": 5,
+                    "strict_max": false,
+                    "min_value": 5,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 5
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "time_signature",
+                    "max_value": 5,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 1,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "time_signature",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                4,
+                                4
+                            ],
+                            [
+                                4,
+                                4
+                            ],
+                            [
+                                4,
+                                4
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        4,
+                        4,
+                        4
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "time_signature",
+                    "max_value": 4.0,
+                    "strict_max": false,
+                    "min_value": 4.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 4.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "time_signature",
+                    "max_value": 3.924038675261169,
+                    "strict_max": false,
+                    "min_value": 3.924038675261169,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 3.924038675261169
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "time_signature",
+                    "max_value": 0.36161786971120724,
+                    "strict_max": false,
+                    "min_value": 0.36161786971120724,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.36161786971120724
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_in_set",
+                "kwargs": {
+                    "column": "time_signature",
+                    "mostly": 1.0,
+                    "value_set": [
+                        1,
+                        3,
+                        4,
+                        5
+                    ],
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_unique_value_count_to_be_between",
+                "kwargs": {
+                    "column": "time_signature",
+                    "max_value": 4,
+                    "strict_max": false,
+                    "min_value": 4,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 4
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+                "kwargs": {
+                    "column": "time_signature",
+                    "max_value": 0.0002222716159146477,
+                    "strict_max": false,
+                    "min_value": 0.0002222716159146477,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.0002222716159146477
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "column": "Class",
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "Class",
+                    "max_value": 0,
+                    "strict_max": false,
+                    "min_value": 0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "Class",
+                    "max_value": 10,
+                    "strict_max": false,
+                    "min_value": 10,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 10
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "Class",
+                    "max_value": 10,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "Class",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                5,
+                                5
+                            ],
+                            [
+                                8,
+                                8
+                            ],
+                            [
+                                10,
+                                10
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        5,
+                        8,
+                        10
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "Class",
+                    "max_value": 8.0,
+                    "strict_max": false,
+                    "min_value": 8.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 8.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "Class",
+                    "max_value": 6.695821293620805,
+                    "strict_max": false,
+                    "min_value": 6.695821293620805,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 6.695821293620805
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "Class",
+                    "max_value": 3.2060734057470737,
+                    "strict_max": false,
+                    "min_value": 3.2060734057470737,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 3.2060734057470737
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_in_set",
+                "kwargs": {
+                    "column": "Class",
+                    "mostly": 1.0,
+                    "value_set": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10
+                    ],
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_unique_value_count_to_be_between",
+                "kwargs": {
+                    "column": "Class",
+                    "max_value": 11,
+                    "strict_max": false,
+                    "min_value": 11,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 11
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+                "kwargs": {
+                    "column": "Class",
+                    "max_value": 0.0006112469437652812,
+                    "strict_max": false,
+                    "min_value": 0.0006112469437652812,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.0006112469437652812
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "Popularity",
+                    "max_value": 1.0,
+                    "strict_max": false,
+                    "min_value": 1.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 1.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "Popularity",
+                    "max_value": 100.0,
+                    "strict_max": false,
+                    "min_value": 100.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 100.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "Popularity",
+                    "max_value": 100.0,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 1.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 428,
+                "missing_percent": 2.37830629028673,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "Popularity",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                33.0,
+                                33.0
+                            ],
+                            [
+                                44.0,
+                                44.0
+                            ],
+                            [
+                                56.0,
+                                56.0
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        33.0,
+                        44.0,
+                        56.0
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "Popularity",
+                    "max_value": 44.0,
+                    "strict_max": false,
+                    "min_value": 44.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 44.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "Popularity",
+                    "max_value": 44.51212431693989,
+                    "strict_max": false,
+                    "min_value": 44.51212431693989,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 44.51212431693989
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "Popularity",
+                    "max_value": 17.426927709383694,
+                    "strict_max": false,
+                    "min_value": 17.426927709383694,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 17.426927709383694
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_in_set",
+                "kwargs": {
+                    "column": "Popularity",
+                    "mostly": 1.0,
+                    "value_set": [
+                        1.0,
+                        2.0,
+                        3.0,
+                        4.0,
+                        5.0,
+                        6.0,
+                        7.0,
+                        8.0,
+                        9.0,
+                        10.0,
+                        11.0,
+                        12.0,
+                        13.0,
+                        14.0,
+                        15.0,
+                        16.0,
+                        17.0,
+                        18.0,
+                        19.0,
+                        20.0,
+                        21.0,
+                        22.0,
+                        23.0,
+                        24.0,
+                        25.0,
+                        26.0,
+                        27.0,
+                        28.0,
+                        29.0,
+                        30.0,
+                        31.0,
+                        32.0,
+                        33.0,
+                        34.0,
+                        35.0,
+                        36.0,
+                        37.0,
+                        38.0,
+                        39.0,
+                        40.0,
+                        41.0,
+                        42.0,
+                        43.0,
+                        44.0,
+                        45.0,
+                        46.0,
+                        47.0,
+                        48.0,
+                        49.0,
+                        50.0,
+                        51.0,
+                        52.0,
+                        53.0,
+                        54.0,
+                        55.0,
+                        56.0,
+                        57.0,
+                        58.0,
+                        59.0,
+                        60.0,
+                        61.0,
+                        62.0,
+                        63.0,
+                        64.0,
+                        65.0,
+                        66.0,
+                        67.0,
+                        68.0,
+                        69.0,
+                        70.0,
+                        71.0,
+                        72.0,
+                        73.0,
+                        74.0,
+                        75.0,
+                        76.0,
+                        77.0,
+                        78.0,
+                        79.0,
+                        80.0,
+                        81.0,
+                        82.0,
+                        83.0,
+                        84.0,
+                        85.0,
+                        86.0,
+                        87.0,
+                        88.0,
+                        89.0,
+                        90.0,
+                        91.0,
+                        92.0,
+                        93.0,
+                        94.0,
+                        95.0,
+                        96.0,
+                        97.0,
+                        98.0,
+                        99.0,
+                        100.0
+                    ],
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 428,
+                "missing_percent": 2.37830629028673,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_unique_value_count_to_be_between",
+                "kwargs": {
+                    "column": "Popularity",
+                    "max_value": 100,
+                    "strict_max": false,
+                    "min_value": 100,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 100
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+                "kwargs": {
+                    "column": "Popularity",
+                    "max_value": 0.005692167577413479,
+                    "strict_max": false,
+                    "min_value": 0.005692167577413479,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.005692167577413479
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "key",
+                    "max_value": 1.0,
+                    "strict_max": false,
+                    "min_value": 1.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 1.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "key",
+                    "max_value": 11.0,
+                    "strict_max": false,
+                    "min_value": 11.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 11.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "key",
+                    "max_value": 11.0,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 1.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 2014,
+                "missing_percent": 11.191375861302513,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "key",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                3.0,
+                                3.0
+                            ],
+                            [
+                                6.0,
+                                6.0
+                            ],
+                            [
+                                9.0,
+                                9.0
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        3.0,
+                        6.0,
+                        9.0
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "key",
+                    "max_value": 6.0,
+                    "strict_max": false,
+                    "min_value": 6.0,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 6.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "key",
+                    "max_value": 5.952446502315104,
+                    "strict_max": false,
+                    "min_value": 5.952446502315104,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 5.952446502315104
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "key",
+                    "max_value": 3.196854284006288,
+                    "strict_max": false,
+                    "min_value": 3.196854284006288,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 3.196854284006288
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_in_set",
+                "kwargs": {
+                    "column": "key",
+                    "mostly": 1.0,
+                    "value_set": [
+                        1.0,
+                        2.0,
+                        3.0,
+                        4.0,
+                        5.0,
+                        6.0,
+                        7.0,
+                        8.0,
+                        9.0,
+                        10.0,
+                        11.0
+                    ],
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 2014,
+                "missing_percent": 11.191375861302513,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_unique_value_count_to_be_between",
+                "kwargs": {
+                    "column": "key",
+                    "max_value": 11,
+                    "strict_max": false,
+                    "min_value": 11,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 11
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+                "kwargs": {
+                    "column": "key",
+                    "max_value": 0.0006882743085971718,
+                    "strict_max": false,
+                    "min_value": 0.0006882743085971718,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.0006882743085971718
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_min_to_be_between",
+                "kwargs": {
+                    "column": "instrumentalness",
+                    "max_value": 1e-06,
+                    "strict_max": false,
+                    "min_value": 1e-06,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 1e-06
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_max_to_be_between",
+                "kwargs": {
+                    "column": "instrumentalness",
+                    "max_value": 0.996,
+                    "strict_max": false,
+                    "min_value": 0.996,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.996
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "column": "instrumentalness",
+                    "max_value": 0.996,
+                    "strict_max": false,
+                    "mostly": 1.0,
+                    "min_value": 1e-06,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "element_count": 17996,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 4377,
+                "missing_percent": 24.322071571460324,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": [],
+                "unexpected_list": [],
+                "unexpected_index_list": [],
+                "unexpected_index_query": "df.filter(items=[], axis=0)"
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_quantile_values_to_be_between",
+                "kwargs": {
+                    "column": "instrumentalness",
+                    "quantile_ranges": {
+                        "quantiles": [
+                            0.25,
+                            0.5,
+                            0.75
+                        ],
+                        "value_ranges": [
+                            [
+                                8.86e-05,
+                                8.86e-05
+                            ],
+                            [
+                                0.00391,
+                                0.00391
+                            ],
+                            [
+                                0.2,
+                                0.2
+                            ]
+                        ]
+                    },
+                    "allow_relative_error": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": {
+                    "quantiles": [
+                        0.25,
+                        0.5,
+                        0.75
+                    ],
+                    "values": [
+                        8.86e-05,
+                        0.00391,
+                        0.2
+                    ]
+                },
+                "details": {
+                    "success_details": [
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_median_to_be_between",
+                "kwargs": {
+                    "column": "instrumentalness",
+                    "max_value": 0.00391,
+                    "strict_max": false,
+                    "min_value": 0.00391,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.00391
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_mean_to_be_between",
+                "kwargs": {
+                    "column": "instrumentalness",
+                    "max_value": 0.1775619253660327,
+                    "strict_max": false,
+                    "min_value": 0.1775619253660327,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.1775619253660327
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "expectation_type": "expect_column_stdev_to_be_between",
+                "kwargs": {
+                    "column": "instrumentalness",
+                    "max_value": 0.3040484241769848,
+                    "strict_max": false,
+                    "min_value": 0.3040484241769848,
+                    "strict_min": false,
+                    "result_format": {
+                        "result_format": "COMPLETE"
+                    },
+                    "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset"
+                },
+                "meta": {}
+            },
+            "result": {
+                "observed_value": 0.3040484241769848
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        }
+    ],
+    "evaluation_parameters": {},
+    "statistics": {
+        "evaluated_expectations": 138,
+        "successful_expectations": 138,
+        "unsuccessful_expectations": 0,
+        "success_percent": 100.0
+    },
+    "meta": {
+        "great_expectations_version": "0.17.23",
+        "expectation_suite_name": "default",
+        "run_id": {
+            "run_name": null,
+            "run_time": "2023-10-23T22:32:01.398745+00:00"
+        },
+        "batch_spec": {
+            "reader_method": "read_csv",
+            "reader_options": {
+                "filepath_or_buffer": "/app/data/data.csv",
+                "sep": ","
+            }
+        },
+        "batch_markers": {
+            "ge_load_time": "20231023T223156.677926Z",
+            "pandas_data_fingerprint": "36221ffa63239e7501441fc14339fdc5"
+        },
+        "active_batch_definition": {
+            "datasource_name": "default_pandas_datasource",
+            "data_connector_name": "fluent",
+            "data_asset_name": "#ephemeral_pandas_asset",
+            "batch_identifiers": {}
+        },
+        "validation_time": "20231023T223201.398679Z",
+        "checkpoint_name": null
+    }
+}
