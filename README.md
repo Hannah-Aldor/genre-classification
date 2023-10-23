@@ -1,2 +1,2 @@
 # genre-classification
-Final project for ECS 171
+Final project for ECS 171. Under construction...
