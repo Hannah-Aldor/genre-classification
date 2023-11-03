@@ -1,0 +1,20 @@
+{
+  "name": "genre-classification",
+  "version": "1.0.0",
+  "description": "Final project for ECS 171. Under construction...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "cd client && npm start",
+    "install-client": "cd client && npm install && cd ..",
+    "build-client": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "s",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
