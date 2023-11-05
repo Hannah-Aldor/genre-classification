@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+
+.SameLine {
+  display: inline;
+}
+
+.inputField {
+  margin-left: 10px;
+  font-size: large;
+  width: 10vmin;
+}
+
+.FieldLabel {
+  margin-left: 10px;
+  font-size: large;
+  background-color: red;
+}
+
+.LabelDiv {
+  min-inline-size: 1000px;
+}
+
