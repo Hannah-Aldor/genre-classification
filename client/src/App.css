@@ -40,5 +40,9 @@
 
 .floater {
   float: left;
+  width: 50%;
 }
 
+.upload-label {
+  padding-right: 1cm;
+}

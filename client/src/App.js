@@ -1,50 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 
-const NUMBER_OF_INPUTS = 11;
-
-function InputField() {
-  return (
-    <input className="inputField" />
-  );
-}
-
-function Fields() {
-  return (
-    <div>
-      <div className="SameLine">
-        <FieldLabel text="Popularity"/>
-        <FieldLabel text="acousticness"/>
-        <FieldLabel text="danceability"/>
-        <FieldLabel text="duration_ms"/>
-        <FieldLabel text="energy"/>
-        <FieldLabel text="instrumentalness"/>
-        <FieldLabel text="liveness"/>
-        <FieldLabel text="loudness"/>
-        <FieldLabel text="mode"/>
-        <FieldLabel text="speechiness"/>
-        <FieldLabel text="valence"/>
-      </div>
-      
-      <br/>
-
-      <div className="SameLine">
-        {Array(NUMBER_OF_INPUTS).fill(<InputField />)}
-      </div>
-    </div>
-  )
-}
-
-function FieldLabel({text}) {
-  return (
-    <div className="LabelDiv SameLine">
-      <label className="FieldLabel">{text}</label>
-    </div>
-  )
-}
-
-
-
 
 function ModelPrediction({model}) {
   return (
@@ -55,36 +11,39 @@ function ModelPrediction({model}) {
   )
 }
 
-
+function handleUpload(event) {
+  const file = event.target.files[0];
+  console.log(file.name);
+}
 
 
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        Genre Classification API
+        <h1>Genre Classification API</h1>
         <form>
-          <h1>Upload Input Data</h1>
-          <input type="file" />
-          <button type="submit">Upload</button>
+            <span className="upload-label">Upload Input Data</span>
+            <input type="file" onChange={handleUpload}/>
       </form>
       </header>
 
       <div className="body-div">
-      <div className="intruction-div floater">
-        This API interfaces with 3 classification models that predict genre based on
-        popularity, acousticness, danceability, duration_ms, energy, instrumentalness,
-        liveness, loudness, mode, speechiness, and valence.
+        <div className="intruction-div floater">
+          This API interfaces with 3 classification models that predict genre based on
+          popularity, acousticness, danceability, duration_ms, energy, instrumentalness,
+          liveness, loudness, mode, speechiness, and valence.
 
-        Upload a CSV containing columns for the features to interact with the API.
-      </div>
+          Upload a CSV containing columns for the features to interact with the API.
+        </div>
 
-      <div className="predictions floater">
-        <ModelPrediction model="1"/>
-        <ModelPrediction model="2"/>
-        <ModelPrediction model="3"/>
-      </div>
+        <div className="predictions floater">
+          <ModelPrediction model="1"/>
+          <ModelPrediction model="2"/>
+          <ModelPrediction model="3"/>
+        </div>
 
       </div>
 
