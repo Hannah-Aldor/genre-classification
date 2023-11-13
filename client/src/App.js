@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -16,9 +18,32 @@ function handleUpload(event) {
   console.log(file.name);
 }
 
+function Column({column_id}) {
+  return <div className="column">
+    <h2>Name {column_id}</h2>
+    <p>...</p>
+    <p>data</p>
+    <p>...</p>
+  </div>
+}
+
+
+function ResponseModal({data}) {
+  return <div className="response-modal">
+    <h1>Model predictions</h1>
+    <div>
+      <Column column_id={0}/>
+      <Column column_id={1}/>
+      <Column column_id={2}/>
+      <Column column_id={3}/>
+      <Column column_id={4}/>
+    </div>
+  </div>
+}
 
 
 function App() {
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="App">
@@ -46,6 +71,11 @@ function App() {
         </div>
 
       </div>
+
+
+      <ResponseModal/>
+
+
 
     </div>
   );
