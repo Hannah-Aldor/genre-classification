@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,23 +38,7 @@
 }
 
 
-.SameLine {
-  display: inline;
-}
-
-.inputField {
-  margin-left: 10px;
-  font-size: large;
-  width: 10vmin;
-}
-
-.FieldLabel {
-  margin-left: 10px;
-  font-size: large;
-  background-color: red;
-}
-
-.LabelDiv {
-  min-inline-size: 1000px;
+.floater {
+  float: left;
 }
 
