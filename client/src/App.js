@@ -1,17 +1,26 @@
 import { useState } from "react";
+import Modal from "react-modal";
 
 import logo from './logo.svg';
 import './App.css';
 
 
-function ModelPrediction({model}) {
+function ModelPrediction({model, modalOpen, setModalOpen}) {
   return (
+    <div>
+
+    <ResponseModal data="1" modalOpen={modalOpen} setModalOpen={setModalOpen}>
+    </ResponseModal>
+
     <details>
       <summary>Model {model}</summary>
       <span>*Prediction Report for model {model}*</span>
   </details>
+  <button onClick={setModalOpen}>Show Report</button>
+  </div>
   )
 }
+
 
 function handleUpload(event) {
   const file = event.target.files[0];
@@ -28,8 +37,12 @@ function Column({column_id}) {
 }
 
 
-function ResponseModal({data}) {
-  return <div className="response-modal">
+function ResponseModal({data, modalOpen, setModalOpen}) {
+  return <Modal
+  isOpen={modalOpen}
+  onRequestClose={() => setModalOpen(false)}
+  className="response-modal"
+  >
     <h1>Model predictions</h1>
     <div>
       <Column column_id={0}/>
@@ -38,7 +51,8 @@ function ResponseModal({data}) {
       <Column column_id={3}/>
       <Column column_id={4}/>
     </div>
-  </div>
+    <button onClick={() => setModalOpen(false)}>Close Modal</button>
+  </Modal>
 }
 
 
@@ -65,9 +79,8 @@ function App() {
         </div>
 
         <div className="predictions floater">
-          <ModelPrediction model="1"/>
-          <ModelPrediction model="2"/>
-          <ModelPrediction model="3"/>
+          <ModelPrediction model="1" modalOpen={modalOpen} setModalOpen={setModalOpen}/>
+
         </div>
 
       </div>

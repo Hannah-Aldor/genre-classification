@@ -16,5 +16,8 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "react-modal": "^3.16.1"
   }
 }
