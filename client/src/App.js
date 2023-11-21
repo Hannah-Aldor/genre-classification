@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Modal from "react-modal";
 
-import logo from './logo.svg';
 import './App.css';
 
 
@@ -15,9 +14,9 @@ function ModelPrediction({model, modalOpen, setModalOpen}) {
     <details>
       <summary>Model {model}</summary>
       <span>*Prediction Report for model {model}*</span>
-  </details>
-  <button onClick={setModalOpen}>Show Report</button>
-  </div>
+    </details>
+    <button onClick={setModalOpen}>Show Report</button>
+    </div>
   )
 }
 
@@ -64,32 +63,31 @@ function App() {
       <header className="App-header">
         <h1>Genre Classification API</h1>
         <form>
-            <span className="upload-label">Upload Input Data</span>
-            <input type="file" onChange={handleUpload}/>
-      </form>
+          <span className="upload-label">Upload Input Data:</span>
+          <input type="file" onChange={handleUpload}/>
+        </form>
       </header>
 
       <div className="body-div">
-        <div className="intruction-div floater">
-          This API interfaces with 3 classification models that predict genre based on
+        <div className="instruction-div floater">
+          • This API interfaces with 3 classification models that predict genre based on
           popularity, acousticness, danceability, duration_ms, energy, instrumentalness,
           liveness, loudness, mode, speechiness, and valence.
-
-          Upload a CSV containing columns for the features to interact with the API.
+          <br></br>
+          <br></br>
+          • Upload a CSV file containing columns for the features to interact with the API.
         </div>
-
         <div className="predictions floater">
           <ModelPrediction model="1" modalOpen={modalOpen} setModalOpen={setModalOpen}/>
 
         </div>
 
       </div>
-
-
-      <ResponseModal/>
-
-
-
+      <ResponseModal />
+      <div id="left"></div>
+      <div id="right"></div>
+      <div id="top"></div>
+      <div id="bottom"></div>
     </div>
   );
 }
