@@ -1,60 +1,48 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pandas as pd
+import joblib
 from sklearn import svm
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 
 app = Flask(__name__)
+CORS(app)
 
-# Load the preprocessed data from CSV
-df = pd.read_csv('preprocessed_data (2).csv')
+# Load the models
+knn = joblib.load('./models/best_knn.pkl')
+rbf_svm = joblib.load('./models/best_rbf_svm.pkl')
+linear_svm = joblib.load('./models/best_linear_svm.pkl')
 
-X = df.drop('music_genre', axis=1)  # Drop the target column to isolate features
-y = df['music_genre']  # Target column with genres encoded from 0 to 9
-
-# Split the dataset into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Create an SVM classifier
-svm_model = svm.SVC(decision_function_shape='ovr')
-
-# Train the model
-svm_model.fit(X_train, y_train)
-
-# Create an RBF Kernel SVM classifier
-rbf_svc = svm.SVC(kernel='rbf')
-rbf_svc.fit(X_train, y_train)
-
-# Create a Polynomial Kernel SVM classifier
-# poly_svc = svm.SVC(kernel='poly', degree=3)
-# poly_svc.fit(X_train, y_train)
 
 @app.route('/get-prediction', methods=['POST'])
 def get_prediction():
     try:
         # Get the CSV data from the request
         file = request.files['file']
-        user_data = pd.read_csv(file)
-        user_data = user_data.drop('music_genre', axis=1)
+        filename = file.filename
 
-        # Make predictions using the loaded models
-        svm_pred = svm_model.predict(user_data)
-        rbf_pred = rbf_svc.predict(user_data)
-        # poly_pred = poly_svc.predict(user_data)
+        # Extract test set number
+        i = filename.split('X_test_')[1]
+        
+        user_data = pd.read_csv(file)
+        y_test = pd.read_csv(f'./test_datasets/y_test_{i}')
+
+        # Get model predictions
+        rbf_pred = rbf_svm.predict(user_data)
+        knn_pred = knn.predict(user_data)
+        linear_pred = linear_svm.predict(user_data)
 
         # Evaluate the models
-        svm_report = classification_report(y_test, svm_model.predict(X_test), output_dict=True)
-        rbf_report = classification_report(y_test, rbf_svc.predict(X_test), output_dict=True)
-        # poly_report = classification_report(y_test, poly_svc.predict(X_test), output_dict=True)
+        rbf_report = classification_report(y_test, rbf_pred, output_dict=True)
+        knn_report = classification_report(y_test, knn_pred, output_dict=True)
+        linear_report = classification_report(y_test, linear_pred, output_dict=True)
 
         # Prepare the response
         response = {
-            'svm_prediction': svm_pred.tolist(),
-            'rbf_prediction': rbf_pred.tolist(),
-            # 'poly_prediction': poly_pred.tolist(),
-            'svm_report': svm_report,
             'rbf_report': rbf_report,
-            # 'poly_report': poly_report,
+            'knn_report': knn_report, 
+            'linear_report': linear_report,
         }
 
         return jsonify(response)
@@ -63,4 +51,4 @@ def get_prediction():
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5000, threaded=True)
