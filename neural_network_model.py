@@ -14,15 +14,24 @@ y = df["music_genre"]
 X_train, X_test = train_test_split(X, test_size=0.2, random_state=21)
 y_train, y_test = train_test_split(y, test_size=0.2, random_state=21)
 
-Optimal_Hyper_parameters =  {'activation': 'logistic', 'batch_size': 100, 'hidden_layer_sizes': (35, 35), 'learning_rate_init': 0.025, 'max_iter': 1000, 'solver': 'sgd'}
+#Optimal_Hyper_parameters =  {'activation': 'logistic', 'batch_size': 100, 'hidden_layer_sizes': (35, 35), 'learning_rate_init': 0.025, 'max_iter': 1000, 'solver': 'sgd'}
 #Optimal Accuracy :  0.5882
 
+parameters =  {
+    'activation': 'logistic',
+    'batch_size': 50,
+    'hidden_layer_sizes': (200, 100, 50, 35),
+    'learning_rate_init': 0.005,
+    'max_iter': 10000,
+    'solver': 'sgd'
+}
+
 '''
-max_iterations = [1000, 2000]
-hidden_layer_siz = [(35, 37), (35, 35)]
+max_iterations = [4000]
+hidden_layer_siz = [(100, 100, 100, 10)]
 learning_rates = 0.005 * np.arange(5, 6)
 activations = ["logistic"]
-batch_sizes = [100, 50]
+batch_sizes = [100]
 solvers = ["sgd"] # "lbfgs"
 
 param_grid = dict(
@@ -51,15 +60,15 @@ grid.fit(X, y)
 
 print("Optimal Hyper-parameters : ", grid.best_params_)
 print("Optimal Accuracy : ", grid.best_score_)
-'''
 
-mlp = MLPClassifier(**Optimal_Hyper_parameters)
+'''
+mlp = MLPClassifier(**parameters)
 
 mlp.fit(X_train, y_train)
 
-Y_hat = mlp.predict(X_test)
+Y_hat = mlp.predict(X)
 
-report = classification_report(y_test, Y_hat, digits=4)
+report = classification_report(y, Y_hat, digits=4)
 print(report)
 
 
