@@ -1,6 +1,16 @@
-# genre-classification
-Final project for ECS 171. Under construction...
+# ECS 171 Group 29 Final Project
 
-example curl command:
+## Getting Started
+1. Install the required project dependencies:
+    - This project runs on Node `v20.9.0`, NPM `v10.1.0`, and Python `3.10.9`. Be sure `node -v`, `npm -v`, and `python --version` return the correct version numbers before moving on.   
+    - In the project root directory, `$ npm install`.
+    - In the `/client` directory, `$ npm install`.
+2. Run the web app locally:
+    - You must set the `FLASK_APP` and `FLASK_ENV` environment variables to `app.py` and `development` respectively. An example of doing this in Linux is `$ export FLASK_APP=app.py` and `$ export FLASK_ENV=development`.
+    - In the project root directory, `$ npm start`. This starts up both the development client and server at the same time. Wait for the server to become available; the way you can tell is if you see the following output: `* Running on http://127.0.0.1:5000`.
+    
 
-curl -X POST http://127.0.0.1:5000/get-prediction -H "Content-Type: multipart/form-data" -F "file=@/Users/rohankolappa/Desktop/171_Flask/preprocessed_data (2).csv"
+## Interact With the Web App
+1. Use any of the testing datasets in `/test_datasets` to pass to our models.
+2. Click the 'Submit' button.
+3. View the Classification Report for the three models on the web app.

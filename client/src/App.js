@@ -20,22 +20,6 @@ function ModelPrediction({data, model, modalOpen, setModalOpen}) {
   )
 }
 
-
-// function ModelPrediction({data, model, modalOpen, setModalOpen}) {
-//   return (
-//     <div>
-
-//     <ResponseModal data={data} model={model} modalOpen={modalOpen} setModalOpen={setModalOpen}/>
-
-//     <details>
-//       <summary>Model {model}</summary>
-//       <span>*Prediction Report for model {model}*</span>
-//     </details>
-//     <button onClick={setModalOpen}>Show Report</button>
-//     </div>
-//   )
-// }
-
 function Column({column_id}) {
   return <div className="column">
     <h2>Name {column_id}</h2>
@@ -44,54 +28,6 @@ function Column({column_id}) {
     <p>...</p>
   </div>
 }
-
-
-// function ResponseModal({ data, modalOpen, setModalOpen }) {
-//   return (
-//     <Modal
-//       isOpen={modalOpen}
-//       onRequestClose={() => setModalOpen(false)}
-//       className="response-modal"
-//     >
-//       <h1>Model predictions</h1>
-//       {data ? (
-//         <div>
-//           {/* Table for the data */}
-//           <table>
-//             <thead>
-//               <tr>
-//                 <th>Label</th>
-//                 <th>F1-Score</th>
-//                 <th>Precision</th>
-//                 <th>Recall</th>
-//               </tr>
-//             </thead>
-//             <tbody>
-//               {Object.entries(data).filter(([key]) => !isNaN(key)).map(([key, values]) => (
-//                 <tr key={key}>
-//                   <td>{key}</td>
-//                   <td>{values['f1-score']}</td>
-//                   <td>{values.precision}</td>
-//                   <td>{values.recall}</td>
-//                 </tr>
-//               ))}
-//             </tbody>
-//           </table>
-
-//           {/* Display other keys */}
-//           <div className="other-keys">
-//             <p><strong>Accuracy:</strong> {data.accuracy}</p>
-//             <p><strong>Macro Avg:</strong> {JSON.stringify(data['macro avg'])}</p>
-//             <p><strong>Weighted Avg:</strong> {JSON.stringify(data['weighted avg'])}</p>
-//           </div>
-//         </div>
-//       ) : (
-//         <p>No data available</p>
-//       )}
-//       <button onClick={() => setModalOpen(false)}>Close Modal</button>
-//     </Modal>
-//   );
-// }
 
 function ResponseModal({ data, modalOpen, setModalOpen }) {
   const renderOtherKeys = (data) => {
@@ -226,9 +162,9 @@ function App() {
 
       <div className="body-div">
         <div className="instruction-div floater">
-          • This API interfaces with 3 SVM classification models that predict music genre based on
+          • This API interfaces with 3 classification models that predict music genre based on
           popularity, acousticness, danceability, duration (ms), energy, instrumentalness,
-          liveness, loudness, mode, speechiness, and valence.
+          liveness, loudness, speechiness, and valence.
 
           <br></br>
           <br></br>
