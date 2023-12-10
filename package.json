@@ -15,11 +15,9 @@
   "author": "s",
   "license": "ISC",
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "concurrently": "^8.2.2"
   },
   "dependencies": {
-    "axios": "^1.6.2",
     "react-modal": "^3.16.1"
   }
 }

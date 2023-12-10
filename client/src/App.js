@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
-import axios from 'axios';
 
 import './App.css';
 
