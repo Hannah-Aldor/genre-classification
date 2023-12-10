@@ -1,0 +1,11 @@
+node_modules/
+README.md
+.git/
+.gitignore
+__pycache__/
+Dockerfile
+docker-compose.yml
+notebooks/
+train_test_split_data/
+preprocessed_data.csv
+*.ipynb

@@ -1,0 +1,18 @@
+version: '3.10'
+services:
+  server:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+      - FLASK_RUN_HOST=0.0.0.0
+  client:
+    build: ./client
+    ports:
+      - "3000:80"
+    volumes:
+      - ./client:/client
